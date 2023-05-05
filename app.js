@@ -13,7 +13,8 @@ app.use(express.static("public"));
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/wikiDB');
+  await mongoose.connect(`mongodb+srv://${process.env.DATA_USER}:${process.env.DATA_PW}@cluster0.vgskun3.mongodb.net/?retryWrites=true&w=majority`);
+  // await mongoose.connect('mongodb://127.0.0.1:27017/wikiDB');
 }
 
 const articleShema = new mongoose.Schema({
