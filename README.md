@@ -5,7 +5,7 @@ The API open source to find definitions about programation.
 ## Guide:
 main url = https://wiki-api-6f4c.onrender.com/
 
-| HTTP Verb | /articles | /articles/articleTitle |
+| HTTP Verb | /articles<br>https://wiki-api-6f4c.onrender.com/articles | /articles/articleTitle<br>exemple: https://wiki-api-6f4c.onrender.com/articles/API |
 |---|---|---|
 | GET | Fetch all articles on JSON format | Fetch the article with the title articleTitle |
 | POST | Create new post.<br>Add in req.body:<br>title: "article title" AND content: "article content | - |
